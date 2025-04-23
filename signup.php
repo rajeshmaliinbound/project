@@ -3,8 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>sign up & sign in page</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
                 <h2 style="margin-bottom: 30px;">Join today</h2>
                  <div class="signup-options">
                     <div class="google">
-                        <a class="google-signup" href="">
+                        <a class="google-signup">
                             <img src="image\google_logo.png" alt="No G-logo">
                             <p>Sign up with Google</p>
                         </a>
@@ -37,7 +39,7 @@
                     </div>
 
                     <div class="account">
-                        <a class="create-account" href="">
+                        <a class="create-account">
                             <p>Create account</p>
                         </a>
                     </div>
@@ -63,21 +65,36 @@
 
     <!-- Add New User Form Start-->
     <div class="signup-form">
-        <form>
-            <h2>Create your account</h2>
+        <form class="signup-new">
+            <div class="form-logo">
+                <span class="close-form"><i class="fa fa-times" aria-hidden="true"></i></span>
+                <img src="image\logo.svg" alt="No logo" style="width: 10%;">
+            </div>
+            <h2 style="font-size: 20px;font-weight: bold;">Create your account</h2>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+                <label>Name:</label>
+                <input type="text" class="form-control" placeholder="Enter Name" aria-label="name" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="form-group">
+                <label>Username:</label>
+                <input type="text" class="form-control" placeholder="Enter username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" class="form-control" placeholder="Enter Password" aria-label="password" aria-describedby="basic-addon1">
             </div>
             
             <div class="form-group">
-                <label></label>
+                <label>Email:</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             </div>
 
             <div class="form-group">
-                <label></label>
-                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</small>
+                <label>Date of birth:</label>
+                <input type="date" class="form-control">
+                <span>This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</span>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

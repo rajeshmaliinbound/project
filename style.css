@@ -60,6 +60,11 @@
     font-size: 17px;
 }
 
+.google-signup:hover{
+    background-color: rgb(245, 241, 241) !important;
+    text-decoration: none !important;
+}
+
 .apple{
     margin-top: 30px;
 }
@@ -86,7 +91,8 @@
 }
 
 .apple-signup:hover{
-    background-color: lightgray;
+    background-color: rgb(245, 241, 241) !important;
+    text-decoration: none !important;
 }
 
 .google-signup:hover{
@@ -110,9 +116,6 @@
     margin-left: 25px;
 }
 
-.account{
-    margin-top: 18px;
-}
 .create-account{
     background-color: #1D9BF0;
     text-decoration: none;
@@ -125,7 +128,14 @@
 }
 
 .create-account:hover{
-    background-color: #2b93d8;
+    background-color: #2b93d8 !important;
+    color: white !important;
+    text-decoration: none;
+}
+
+.google-signup:hover{
+    background-color: rgb(245, 241, 241) !important;
+    text-decoration: none !important;
 }
 
 .create-account p{
@@ -169,6 +179,7 @@
 
 .sign-in-account:hover{
     background-color: #eef6fc;
+    text-decoration: none;
 }
 
 .sign-in-account p{
@@ -203,9 +214,10 @@
 
 /* create account form css */
 .signup-form{
+    display: none;
     position: absolute;
-    top: 104px;
-    left: 400px;
+    top: 50px;
+    left: 500px;
     width: 400px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -213,5 +225,17 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 20px 25px;
     z-index: 1000;
+}
+
+.form-logo img{
+    margin-left: 40%;
+}
+
+.close-form{
+    font-size: 25px;
+}
+
+.close-form:hover{
+    font-size: 25px;
 }
 
