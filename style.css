@@ -1,0 +1,217 @@
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.left-logo{
+    width: 50%;
+    text-align: center;
+}
+
+.left-logo img {
+    margin-top: 30%;
+}
+
+.right_side{
+    width: 50%;
+}
+
+.right-items{
+    margin: 20px;
+}
+
+.right-items h1{
+    font-size: 60px;
+    margin-left: 40px;
+    font-weight: bold;
+    margin-top: 80px;
+    color: black;
+}
+
+.right-items h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 40px;
+    color: black;
+}
+
+.google-signup{
+    background-color: white;
+    border: 1px solid lightgray;
+    text-decoration: none;
+    color: black;
+    height: 5px;
+    padding: 9px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+.google-signup img{
+    width: 18px;
+    margin-right: 2px;
+    margin-left: 50px;
+}
+.google-signup p{
+    display: inline;
+    margin-right: 50px;
+    font-size: 17px;
+}
+
+.apple{
+    margin-top: 30px;
+}
+.apple-signup{
+    background-color: white;
+    border: 1px solid lightgray;
+    text-decoration: none;
+    color: black;
+    height: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+
+.apple-signup i{
+    margin-left: 53px;
+    font-size: 20px;
+}
+.apple-signup p{
+    margin-right: 60px;
+    display: inline;
+    font-size: 17px;
+}
+
+.apple-signup:hover{
+    background-color: lightgray;
+}
+
+.google-signup:hover{
+    background-color: lightgray;
+}
+
+.or{
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+}
+
+.or hr{
+    width: 100px;
+    margin-left: 40px;
+    margin-right: 0;
+    border: 1px solid rgb(247, 243, 243);
+}
+.or span{
+    margin-right: -10px;
+    margin-left: 25px;
+}
+
+.account{
+    margin-top: 18px;
+}
+.create-account{
+    background-color: #1D9BF0;
+    text-decoration: none;
+    color: white;
+    height: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+
+.create-account:hover{
+    background-color: #2b93d8;
+}
+
+.create-account p{
+    margin-left: 80px;
+    margin-right: 80px;
+    display: inline;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.terms{
+    font-size: 12px;
+    margin: 10px 220px 0 40px;
+}
+
+.terms p{
+    color: rgb(95, 94, 94);
+}
+.terms p a{
+    text-decoration: none;
+    color: rgb(14, 176, 240);
+}
+
+.terms p a:hover{
+    text-decoration: underline;
+}
+
+.sign-in{
+    margin-top: 20px;
+}
+.sign-in-account{
+    text-decoration: none;
+    color: white;
+    height: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 40px;
+    border: 1px solid rgb(204, 201, 201);
+}
+
+.sign-in-account:hover{
+    background-color: #eef6fc;
+}
+
+.sign-in-account p{
+    margin-left: 108px;
+    margin-right: 108px;
+    color: #1D9BF0;
+    display: inline;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer-links{
+    font-size: 12px;
+    text-align-last: center;
+}
+
+.footer-links a{
+    font-size: 13px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-decoration: none;
+    color: rgb(95, 94, 94);
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.footer-links span{
+    color: rgb(95, 94, 94);
+}
+
+/* create account form css */
+.signup-form{
+    position: absolute;
+    top: 104px;
+    left: 400px;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px 25px;
+    z-index: 1000;
+}
+
