@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    height: 100%;
+    height: 90%;
 }
 
 .left-logo{
@@ -216,11 +216,11 @@
 .signup-form{
     display: none;
     position: absolute;
-    top: 50px;
-    left: 500px;
-    width: 400px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    top: 30px;
+    left: 450px;
+    width: 480px;
+    background-color: white;
+    border: 1px solid rgb(211, 210, 210);
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 20px 25px;
@@ -239,3 +239,123 @@
     font-size: 25px;
 }
 
+.signin-form {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 9999;
+}
+
+
+/* sign in form css */
+.signin-popup {
+    width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.signin-popup h2 {
+    margin-bottom: 20px;
+    margin: 20px 20%;
+    font-weight: bold;
+    color: black;
+}
+
+.google-btn, .apple-btn {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    border: 1px solid rgb(194, 191, 191);
+    border-radius: 30px;
+    background: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn img, .apple-btn i {
+    margin-right: 5px;
+}
+
+.or-line {
+    display: flex;
+    align-items: center;
+    margin: 0 20%;
+}
+
+.or-line hr {
+    flex: 1;
+    border-color: #ccc;
+}
+
+.or-line span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.full-btn {
+    width: 60%;
+    margin-bottom: 10px !important;
+    border-radius: 20px !important;
+    margin: 0 20%;
+}
+
+.inputs input{
+    margin-bottom: 10px !important;
+    width: 60%;
+    margin: 0 20%;
+}
+
+.close-signin {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.google-btn img{
+    width: 18px;
+}
+
+.signup-logo{
+    position: absolute;
+    top: 15px;
+    left: 47%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.signup-bt p{
+    margin: 0 20%;
+}
+
+#signin-submit{
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+#signin-submit:hover{
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
+
+#forgot-pass{
+    background-color: white;
+    border: 1px solid rgb(202, 200, 200) !important;
+    color: black;
+    font-weight: bold;
+}
+
+#forgot-pass:hover{
+    background-color: rgb(226, 223, 223);
+}
