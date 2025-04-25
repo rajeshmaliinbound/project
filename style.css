@@ -217,7 +217,7 @@
     display: none;
     position: absolute;
     top: 30px;
-    left: 450px;
+    left: 500px;
     width: 480px;
     background-color: white;
     border: 1px solid rgb(211, 210, 210);
@@ -315,6 +315,16 @@
     margin: 0 20%;
 }
 
+.btn-primary{
+    width: 60%;
+    border-radius: 25px !important;
+    background-color: black !important;
+}
+
+.btn-primary:hover{
+    background-color: rgb(39, 38, 38) !important;
+}
+
 .close-signin {
     position: absolute;
     top: 15px;
@@ -358,4 +368,32 @@
 
 #forgot-pass:hover{
     background-color: rgb(226, 223, 223);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 998; 
+}
+
+.signup-form, .signin-form {
+    z-index: 999;
+    position: fixed;
+}
+
+#errorEmail{
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
+}
+
+#errorUsername{
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
 }
