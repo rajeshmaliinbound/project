@@ -1,9 +1,15 @@
-.container{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
     display: flex;
     height: 90%;
 }
 
-.left-logo{
+.left-logo {
     width: 50%;
     text-align: center;
 }
@@ -12,15 +18,15 @@
     margin-top: 30%;
 }
 
-.right_side{
+.right_side {
     width: 50%;
 }
 
-.right-items{
+.right-items {
     margin: 20px;
 }
 
-.right-items h1{
+.right-items h1 {
     font-size: 60px;
     margin-left: 40px;
     font-weight: bold;
@@ -28,7 +34,7 @@
     color: black;
 }
 
-.right-items h2{
+.right-items h2 {
     font-size: 30px;
     font-weight: bold;
     margin-left: 40px;
@@ -36,7 +42,7 @@
     color: black;
 }
 
-.google-signup{
+.google-signup {
     background-color: white;
     border: 1px solid lightgray;
     text-decoration: none;
@@ -49,26 +55,28 @@
     margin-top: 70px;
 }
 
-.google-signup img{
+.google-signup img {
     width: 18px;
     margin-right: 2px;
     margin-left: 50px;
 }
-.google-signup p{
+
+.google-signup p {
     display: inline;
     margin-right: 50px;
     font-size: 17px;
 }
 
-.google-signup:hover{
+.google-signup:hover {
     background-color: rgb(245, 241, 241) !important;
     text-decoration: none !important;
 }
 
-.apple{
+.apple {
     margin-top: 30px;
 }
-.apple-signup{
+
+.apple-signup {
     background-color: white;
     border: 1px solid lightgray;
     text-decoration: none;
@@ -80,43 +88,45 @@
     margin-left: 40px;
 }
 
-.apple-signup i{
+.apple-signup i {
     margin-left: 53px;
     font-size: 20px;
 }
-.apple-signup p{
+
+.apple-signup p {
     margin-right: 60px;
     display: inline;
     font-size: 17px;
 }
 
-.apple-signup:hover{
+.apple-signup:hover {
     background-color: rgb(245, 241, 241) !important;
     text-decoration: none !important;
 }
 
-.google-signup:hover{
+.google-signup:hover {
     background-color: lightgray;
 }
 
-.or{
+.or {
     width: 100%;
     margin-top: 18px;
     display: flex;
 }
 
-.or hr{
+.or hr {
     width: 100px;
     margin-left: 40px;
     margin-right: 0;
     border: 1px solid rgb(247, 243, 243);
 }
-.or span{
+
+.or span {
     margin-right: -10px;
     margin-left: 25px;
 }
 
-.create-account{
+.create-account {
     background-color: #1D9BF0;
     text-decoration: none;
     color: white;
@@ -127,18 +137,18 @@
     margin-left: 40px;
 }
 
-.create-account:hover{
+.create-account:hover {
     background-color: #2b93d8 !important;
     color: white !important;
     text-decoration: none;
 }
 
-.google-signup:hover{
+.google-signup:hover {
     background-color: rgb(245, 241, 241) !important;
     text-decoration: none !important;
 }
 
-.create-account p{
+.create-account p {
     margin-left: 80px;
     margin-right: 80px;
     display: inline;
@@ -146,27 +156,29 @@
     font-weight: bold;
 }
 
-.terms{
+.terms {
     font-size: 12px;
     margin: 10px 220px 0 40px;
 }
 
-.terms p{
+.terms p {
     color: rgb(95, 94, 94);
 }
-.terms p a{
+
+.terms p a {
     text-decoration: none;
     color: rgb(14, 176, 240);
 }
 
-.terms p a:hover{
+.terms p a:hover {
     text-decoration: underline;
 }
 
-.sign-in{
+.sign-in {
     margin-top: 20px;
 }
-.sign-in-account{
+
+.sign-in-account {
     text-decoration: none;
     color: white;
     height: 5px;
@@ -177,12 +189,12 @@
     border: 1px solid rgb(204, 201, 201);
 }
 
-.sign-in-account:hover{
+.sign-in-account:hover {
     background-color: #eef6fc;
     text-decoration: none;
 }
 
-.sign-in-account p{
+.sign-in-account p {
     margin-left: 108px;
     margin-right: 108px;
     color: #1D9BF0;
@@ -191,12 +203,12 @@
     font-weight: bold;
 }
 
-.footer-links{
+.footer-links {
     font-size: 12px;
     text-align-last: center;
 }
 
-.footer-links a{
+.footer-links a {
     font-size: 13px;
     padding-right: 4px;
     padding-left: 4px;
@@ -204,16 +216,16 @@
     color: rgb(95, 94, 94);
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
     text-decoration: underline;
 }
 
-.footer-links span{
+.footer-links span {
     color: rgb(95, 94, 94);
 }
 
 /* create account form css */
-.signup-form{
+.signup-form {
     display: none;
     position: absolute;
     top: 30px;
@@ -227,23 +239,25 @@
     z-index: 1000;
 }
 
-.form-logo img{
+.form-logo img {
     margin-left: 40%;
 }
 
-.close-form{
+.close-form {
     font-size: 25px;
 }
 
-.close-form:hover{
+.close-form:hover {
     font-size: 25px;
 }
 
 .signin-form {
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
     display: none;
     z-index: 9999;
 }
@@ -258,7 +272,7 @@
     position: relative;
     top: 10%;
     margin: auto;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .signin-popup h2 {
@@ -268,7 +282,8 @@
     color: black;
 }
 
-.google-btn, .apple-btn {
+.google-btn,
+.apple-btn {
     width: 60%;
     padding: 10px;
     margin-bottom: 10px;
@@ -282,7 +297,8 @@
     justify-content: center;
 }
 
-.google-btn img, .apple-btn i {
+.google-btn img,
+.apple-btn i {
     margin-right: 5px;
 }
 
@@ -309,19 +325,19 @@
     margin: 0 20%;
 }
 
-.inputs input{
+.inputs input {
     margin-bottom: 10px !important;
     width: 60%;
     margin: 0 20%;
 }
 
-.btn-primary{
+.btn-primary {
     width: 60%;
     border-radius: 25px !important;
     background-color: black !important;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: rgb(39, 38, 38) !important;
 }
 
@@ -333,11 +349,11 @@
     cursor: pointer;
 }
 
-.google-btn img{
+.google-btn img {
     width: 18px;
 }
 
-.signup-logo{
+.signup-logo {
     position: absolute;
     top: 15px;
     left: 47%;
@@ -345,28 +361,28 @@
     cursor: pointer;
 }
 
-.signup-bt p{
+.signup-bt p {
     margin: 0 20%;
 }
 
-#signin-submit{
+#signin-submit {
     background-color: rgb(17, 17, 17);
     color: white;
 }
 
-#signin-submit:hover{
+#signin-submit:hover {
     background-color: rgb(44, 43, 43);
     color: white;
 }
 
-#forgot-pass{
+#forgot-pass {
     background-color: white;
     border: 1px solid rgb(202, 200, 200) !important;
     color: black;
     font-weight: bold;
 }
 
-#forgot-pass:hover{
+#forgot-pass:hover {
     background-color: rgb(226, 223, 223);
 }
 
@@ -377,23 +393,307 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 998; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
 }
 
-.signup-form, .signin-form {
+.signup-form,
+.signin-form {
     z-index: 999;
     position: fixed;
 }
 
-#errorEmail{
+#errorEmail {
     font-size: 12px;
     font-weight: 500;
     color: red;
 }
 
-#errorUsername{
+#errorUsername {
     font-size: 12px;
     font-weight: 500;
     color: red;
+}
+
+/* home tab css */
+.pagecontainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.index-logo {
+    margin-left: 12px;
+}
+
+.index-logo img {
+    width: 12%;
+}
+
+.sidebar {
+    width: 320px;
+    background-color: white;
+    padding: 30px;
+    padding-top: 17px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgb(214, 209, 209);
+    flex-shrink: 0;
+    position: fixed;
+    left: 30px;
+    top: 0;
+}
+
+.sidebar .page-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+    font-size: 22px;
+    padding: 10px 12px;
+    border-radius: 25px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: rgb(219, 216, 216);
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+}
+
+.sidebar-activepage {
+    color: rgb(14, 13, 13);
+    font-weight: bold;
+}
+
+.logout-section{
+    display: none;
+    border-radius: 10px;
+    background-color: rgb(255, 254, 254);
+    padding: 5px;
+    position: absolute;
+    margin-right: 10px;
+    top: 73%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.logout-section button{
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 3px;
+    margin: 5px;
+    color: black;
+}
+.logout-section button:hover{
+    border: none;
+    background-color: rgb(233, 232, 232);
+    border-radius: 5px;
+}
+
+.post-btn {
+    margin: 1px 0;
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.post-btn:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.user-profile:hover {
+    background-color: rgb(199, 195, 195);
+    border-radius: 8px;
+}
+
+.user-profile .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(238, 80, 22);
+    border-radius: 50%;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-main {
+    flex-grow: 1;
+    margin: 0 480px 0 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-header {
+    background-color: rgb(253, 252, 252, 0.9);
+    width: 44.2%;
+    z-index: 10;
+    border-bottom: 1px solid rgb(219, 218, 218);
+    border-right: 1px solid rgb(219, 218, 218);
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 70px;
+    position: fixed;
+}
+
+#for-you {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+}
+
+#for-you:hover {
+    background-color: rgb(221, 220, 220);
+    cursor: pointer;
+}
+
+#Following {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+}
+
+#Following:hover {
+    background-color: rgb(221, 220, 220);
+    cursor: pointer;
+}
+
+.center-content {
+    flex-grow: 1;
+    padding: 70px 0px;
+    border-right: 1px solid rgb(219, 218, 218);
+}
+
+.post {
+    width: 663px;
+    background: white;
+    border: 1px solid rgb(204, 203, 203);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-left: 73px;
+}
+
+.search-box {
+    background-color: white;
+    position: fixed;
+    width: 400px;
+    margin-left: 74%;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 23px;
+    border: 1px solid rgb(202, 200, 200);
+}
+
+#search::placeholder {
+    color: black;
+    font-weight: 400;
+}
+
+.rightbar {
+    width: 380px;
+    background-color: white;
+    padding-top: 0;
+    height: 100vh;
+    margin-right: 80px;
+    /* overflow-y: auto; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.subscribe {
+    background: rgb(252, 250, 250);
+    border: 1px solid rgb(241, 240, 240);
+    border-radius: 12px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.subscribe h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.subscribe p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#subscribe-btn {
+    background-color: rgb(34, 154, 252);
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.trending-section {
+    background: rgb(252, 250, 250);
+    border: 1px solid rgb(241, 240, 240);
+    border-radius: 12px;
+    padding: 5px 15px 5px 15px;
+}
+
+.trending-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.heppening-img {
+    width: 25%;
+    height: 12%;
+    border-radius: 10px;
+}
+
+.img-p {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+
+.trending-section p {
+    margin: 5px 0;
 }

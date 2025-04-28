@@ -118,16 +118,23 @@
                 <button class="apple-btn"><i class="fa fa-apple"></i> Sign in with Apple</button>
             </div>
             <div class="or-line"><hr><span>or</span><hr></div>
-            <div style="width: 100%;" class="inputs">
-                <form class="empty-form">
+
+            <form class="login-form" action="controller.php" method="post" enctype= "multipart/form-data">
+                <div style="width: 100%;" class="inputs">
+                    <input type="hidden" id="validlogin" value="success">
+                    <span id="error-id" style="color:red; margin-left: 20%;"></span>
                     <input type="text" class="form-control" name="loginid" id="loginid" placeholder="email or username">
+
+                    <span id="error-pass" style="color:red; margin-left: 20%;"></span>
                     <input type="password" class="form-control" name="loginpassword" id="loginpassword" placeholder="Enter Password">
-                </form>
-            </div>
-            <div style="width: 100%;">
-                <button type="submit" id="signin-submit" class="btn btn-primary full-btn">Login</button>
-                <button class="btn btn-light full-btn" id="forgot-pass">Forgot password?</button>
-            </div>
+                    <span id="invalid-user" style="color:red; margin-left: 20%;"></span>
+                </div>
+                <div style="width: 100%;">
+                    <button type="submit" id="signin-submit" class="btn btn-primary full-btn">Login</button>
+                    <button class="btn btn-light full-btn" id="forgot-pass">Forgot password?</button>
+                </div>
+            </form>
+
             <div style="width: 100%;" class="signup-bt">
                 <p>Don't have an account? <a href="#">Sign up</a></p>
             </div>
