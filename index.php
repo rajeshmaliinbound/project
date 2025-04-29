@@ -1,3 +1,6 @@
+<?php 
+session_start();
+if(isset($_SESSION["userid"])){ ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="image/logo.svg">
     <script src="script.js"></script>
-    <title>home / X</title>
+    <title>Home / X</title>
     <style>
         body, html {
             height: 100%;
@@ -20,35 +23,10 @@
 </head>
 <body>
     <div class="pagecontainer">
-        <div class="sidebar">
-            <div class="index-logo">
-               <img src="image\logo.svg" alt="No logo">
-            </div>
-            <div class="page-links">
-                <a href="" class="sidebar-activepage "><i class="fa-solid fa-house"></i> Home</a>
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
-                <a href=""><i class="fa-regular fa-bell"></i> Notifications</a>
-                <a href=""><i class="fa-regular fa-envelope"></i> Messages</a>
-                <a href=""><i class="fa-solid fa-compass-drafting"></i> Grok</a>
-                <a href=""><i class="fa-solid fa-people-group"></i> Communities</a>
-                <a href=""><i class="fa-regular fa-user"></i> Profile</a>
-                <a href=""><i class="fa-solid fa-ellipsis"></i> More</a>
-                <button class="post-btn">Post</button>
-            </div>
-            <div class="user-profile">
-                <div class="avatar">R</div>
-                <div>
-                    <div style="color:black; font-size: 18px;"><strong>Rajesh Kumar</strong></div>
-                    <div style="color: rgb(95, 94, 94);; font-size: 15px;">@RajeshKuma7721</div>
-                </div>
-                <span style=""><a><i class="fa-solid fa-ellipsis"></i></a></span>
-            </div>
-
-            <div class="logout-section">
-                <button>Add an existing account</button>
-                <button>Log out @Rajeshmali28276</button>
-            </div>
-        </div>
+    <?php
+        // include file of left-sidebar 
+        include 'layout/left-sidebar.php';
+        ?>
 
         <div class="center-main">
             <div class="center-header">
@@ -80,32 +58,21 @@
             </div>
         </div>
 
-        <div class="rightbar">                
+        <div class="rightbar">
             <div class="subscribe">
                 <h3>Subscribe to Premium</h3>
                 <p>Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
                 <button id="subscribe-btn">Subscribe</button>
             </div>
-            <div class="trending-section">
-                <h3>What's happening</h3>
-                <img src="image\live-img.jpg" class="heppening-img">
-                <div style="display: inline; margin-right:;">
-                    <span class="img-p">From the Desk of Anthony Pompliano</span>
-                </div>
-                <span style="font-size: 16px;">LIVE</span>
-
-                <div style="padding-bottom: 10px;">
-                    <p>Entertainment · Trending</p>
-                    <p style="font-size: 18px; color: black; font-weight: bold;">#HBDSamantha</p>
-                    <p>6,019 posts</p>
-                </div>
-                <div style="padding-bottom: 10px;">
-                    <p>Trending in India</p>
-                    <p style="font-size: 18px; color: black; font-weight: bold;">#VijayDeverakonda</p>
-                    <p>30.1K posts</p>
-                </div>
-            </div>
+            <?php
+                // include file of right-footer 
+                include 'layout/footer.php';
+            ?>
         </div>
     </div>
 </body>
 </html>
+<?php }else{
+    header("location:signup.php");
+}
+?>

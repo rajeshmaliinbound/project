@@ -487,7 +487,7 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.logout-section button{
+.logout-section a{
     border: none;
     background-color: white;
     font-size: 16px;
@@ -495,11 +495,13 @@
     padding: 3px;
     margin: 5px;
     color: black;
+    text-decoration: none;
 }
-.logout-section button:hover{
+.logout-section a:hover{
     border: none;
     background-color: rgb(233, 232, 232);
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .post-btn {
@@ -696,4 +698,83 @@
 
 .trending-section p {
     margin: 5px 0;
+}
+
+/* Notifaction page */
+#Notifications {
+    width: 105%;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.gearicon{
+    margin-left: 72%;
+    padding: 1px;
+}
+
+.notifications-btn{
+    display: flex;
+    margin-left: 73px;
+    margin-right: 5px;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid rgb(219, 218, 218);
+}
+
+.notifications-btn a{
+    padding: 18px 30px;
+    width: 33.4%;
+    color: gray;
+    font-size: 18px;
+}
+
+.notifications-btn a:hover{
+    background-color: rgb(230, 228, 228);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.ntf-active{
+    border-bottom: 4px solid rgb(13, 163, 223);
+    border-bottom-width: 4px;
+    border-radius: 2px;
+    color: black;
+}
+
+.mentions{
+    border: 1px solid gray;
+}
+
+.who-to-follow {
+    background: rgb(252, 250, 250);
+    border: 1px solid rgb(241, 240, 240);
+    border-radius: 12px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.who-to-follow h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.who-to-follow p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#who-to-follow-btn {
+    background-color: rgb(34, 154, 252);
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
 }

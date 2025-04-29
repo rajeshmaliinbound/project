@@ -328,7 +328,7 @@ $(document).ready(function () {
                     } else {
                         $("#validlogin").val("success");
                         $("#invalid-user").text("");
-                        window.location.href = "welcome.php";
+                        window.location.href = "index.php";
                     }
                 }
             });

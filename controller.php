@@ -1,5 +1,6 @@
 <?php
 include 'dbconnection.php';
+session_start();
 
 // insert operation on ajax request
 if (isset($_REQUEST['newuserinsert'])) {
@@ -64,6 +65,7 @@ if (isset($_REQUEST['loginuser'])) {
 
     if ($login_result && mysqli_num_rows($login_result) > 0) {
         $user = mysqli_fetch_assoc($login_result);
+        $_SESSION["userid"] = $loginData;
         echo json_encode([
             'status' => 'success',
             // 'message' => 'Login successful!',

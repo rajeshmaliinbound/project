@@ -21,12 +21,17 @@ if(isset($_SESSION["userid"])){ ?>
             // include file of notification center part
             include 'layout/notification_center.php';
             ?>
+
             <div class="center-content">
                 <div class="notifications-btn">
-                    <a href="notifications.php" class="ntf-active" style="color: black;">All</a>
+                <a href="notifications.php">All</a>
                     <a href="verified.php">Verified</a>
-                    <a href="mentions.php">Mentions</a>
+                    <a href="mentions.php" class="ntf-active" style="color: black;">Mentions</a>
                 </div>
+            </div>
+
+            <div class="mentions">
+                <span>Nothing to see here — yet</span>
             </div>
         </div>
         
