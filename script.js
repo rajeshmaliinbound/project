@@ -338,4 +338,10 @@ $(document).ready(function () {
     $(".user-profile").click(function(){
         $(".logout-section").fadeToggle();
     });
+
+    $("#post_input").focus(function(){
+        $(this).css({
+            "outline":"none",
+        });
+    });
 });

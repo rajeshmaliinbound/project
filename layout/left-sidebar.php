@@ -3,14 +3,14 @@
         <img src="image\logo.svg" alt="No logo">
     </div>
     <div class="page-links">
-        <a href="index.php" class="sidebar-activepage"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="explor.php"><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
-        <a href="notifications.php"><i class="fa-regular fa-bell"></i> Notifications</a>
-        <a href="messages.php"><i class="fa-regular fa-envelope"></i> Messages</a>
-        <a href="grok" style="padding-left: 8px;"><img src="image/grok.png" alt="" width="30"> Grok</a>
-        <a href="communities.php"><i class="fa-solid fa-people-group"></i> Communities</a>
-        <a href="profile.php"><i class="fa-regular fa-user"></i> Profile</a>
-        <a href="more.php" style="padding-left: 8px;"><img src="image/more.png" alt="" width="27"> More</a>
+        <a href="index.php" id="home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="" id="explore"><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
+        <a href="notifications.php" id="notification"><i class="fa-regular fa-bell"></i> Notifications</a>
+        <a href="" id="messages"><i class="fa-regular fa-envelope"></i> Messages</a>
+        <a href="" style="padding-left: 8px;" id="grok"><img src="image/grok.png" alt="" width="30"> Grok</a>
+        <a href="" id="communities"><i class="fa-solid fa-people-group"></i> Communities</a>
+        <a href="" id="profile"><i class="fa-regular fa-user"></i> Profile</a>
+        <a style="padding-left: 8px; cursor:pointer;"><img src="image/more.png" alt="" width="27"> More</a>
         <button class="post-btn">Post</button>
     </div>
     <div class="user-profile">

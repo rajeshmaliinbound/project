@@ -572,6 +572,8 @@
     width: 50%;
     text-align: center;
     padding: 15px;
+    font-weight: 500;
+    color: rgb(103, 114, 124);
 }
 
 #for-you:hover {
@@ -583,6 +585,8 @@
     width: 50%;
     text-align: center;
     padding: 15px;
+    font-weight: 500;
+    color: rgb(103, 114, 124);
 }
 
 #Following:hover {
@@ -596,10 +600,70 @@
     border-right: 1px solid rgb(219, 218, 218);
 }
 
+.input-post{
+    display: flex;
+}
+
+.profile-dp{
+    padding: 14px 24px;
+    border-radius: 50%;
+    background-color: rgb(250, 112, 62);
+}
+.profile-dp span{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.happening-input{
+    margin: 11px;
+}
+
+.happening-input input{
+    padding: 10px 10px;
+    width: 120%;
+    border: none;
+}
+
+.happening-input input::placeholder{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(109, 108, 108);
+}
+
+.everyone-reply{
+    border-bottom: 1px solid rgb(241, 239, 239);
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.everyone-reply span{
+    margin-left: 75px;
+}
+
+.everyone-reply span i{
+    color: rgb(34, 154, 252);
+    padding-right: 3px;
+}
+.everyone-reply span a{
+    color: rgb(34, 154, 252);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.post-options{
+    padding: 10px;
+    margin-left: 60px;
+}
+
+.post-options span{
+    padding-left: 16px;
+}
+
 .post {
     width: 663px;
     background: white;
-    border: 1px solid rgb(204, 203, 203);
+    border: 1px solid rgb(241, 239, 239);
     padding: 15px 20px;
     margin-bottom: 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -717,13 +781,16 @@
     display: flex;
     margin-left: 73px;
     margin-right: 5px;
-    justify-content: space-between;
     text-align: center;
-    border-bottom: 1px solid rgb(219, 218, 218);
+    border-bottom: 1px solid rgb(241, 239, 239);
+    margin-top: 60px;
+    position: fixed;
+    width: 44.9%;
+    background-color: rgba(252, 249, 249, 0.9);
 }
 
 .notifications-btn a{
-    padding: 18px 30px;
+    padding: 18px 0px;
     width: 33.4%;
     color: gray;
     font-size: 18px;
@@ -737,14 +804,19 @@
 }
 
 .ntf-active{
-    border-bottom: 4px solid rgb(13, 163, 223);
+    border-bottom: 4px solid rgb(34, 154, 252);
     border-bottom-width: 4px;
     border-radius: 2px;
     color: black;
 }
 
-.mentions{
-    border: 1px solid gray;
+.foryou-following-active{
+    border-bottom: 4px solid rgb(34, 154, 252);
+    border-bottom-width: 5px;
+    border-radius: 5%;
+    color: black;
+    padding-bottom: 10px;
+    font-weight: 700;
 }
 
 .who-to-follow {
@@ -777,4 +849,76 @@
     font-size: 17px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.mention-center {
+    width: 687px;
+    background: white;
+    /* border: 1px solid rgb(204, 203, 203); */
+    border-top-width: 0px;
+    border-left: none;
+    border-right: none;
+    padding: 15px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-left: 70px;
+}
+
+.mention-center p{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    margin: 0px 130px 0px 130px;
+    text-align-last: left;
+}
+
+.mention-center span{
+    text-align: center;
+    margin: 0px 110px 0px 138px;
+    font-size: 18px;
+    color: rgb(114, 113, 113);
+}
+
+.mention-center section{
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 130px 0px 128px;
+    text-align-last: left;
+}
+
+.notification-all-center{
+    width: 687px;
+    display: flex;
+    background: white;
+    border: 1px solid rgb(241, 239, 239);
+    border-top-width: 0px;
+    border-left: none;
+    border-right: none;
+    padding: 15px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-left: 70px; 
+    font-size: 18px;
+}
+
+.ntf-logo img{
+    height: 32px;
+    margin-right: 10px;
+}
+
+.notify-like{
+    display: block !important;
+    width: 687px;
+    background: white;
+    border: 1px solid rgb(241, 239, 239);
+    border-top-width: 0px;
+    border-left: none;
+    border-right: none;
+    padding: 15px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-left: 70px; 
+    font-size: 18px;
+}
+
+.like-notification{
+    display: flex;
 }

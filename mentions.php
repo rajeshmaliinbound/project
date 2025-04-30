@@ -22,16 +22,17 @@ if(isset($_SESSION["userid"])){ ?>
             include 'layout/notification_center.php';
             ?>
 
-            <div class="center-content">
-                <div class="notifications-btn">
+            <div class="notifications-btn">
                 <a href="notifications.php">All</a>
-                    <a href="verified.php">Verified</a>
-                    <a href="mentions.php" class="ntf-active" style="color: black;">Mentions</a>
-                </div>
+                <a href="verified.php">Verified</a>
+                <a href="mentions.php" class="ntf-active" style="color: black;">Mentions</a>
             </div>
 
-            <div class="mentions">
-                <span>Nothing to see here — yet</span>
+            <div class="center-content" style="padding: 140px 0px;">
+                <div class="mention-center">
+                    <p>Nothing to see here — &nbspyet</p>
+                    <span>When someone mentions you, you’ll find it here.</span>
+                </div>
             </div>
         </div>
         
@@ -41,6 +42,11 @@ if(isset($_SESSION["userid"])){ ?>
         ?>
     </div>
 </body>
+<script>
+    $(document).ready(function () {
+        $("#notification").addClass("sidebar-activepage");
+    });
+</script>
 </html>
 <?php 
 }else{

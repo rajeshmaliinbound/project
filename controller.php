@@ -68,13 +68,10 @@ if (isset($_REQUEST['loginuser'])) {
         $_SESSION["userid"] = $loginData;
         echo json_encode([
             'status' => 'success',
-            // 'message' => 'Login successful!',
-            // 'userdata' => $user
         ]);
     } else {
         echo json_encode([
             'status' => 'failed',
-            // 'message' => 'Invalid username/email or password!'
         ]);
     }
 }

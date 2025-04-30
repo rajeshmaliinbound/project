@@ -30,9 +30,9 @@ if(isset($_SESSION["userid"])){ ?>
 
         <div class="center-main">
             <div class="center-header">
-                <div id="for-you">For you</div>
+                <div id="for-you"><span class="foryou-following-active"> For you </span></div>
 
-                <div id="Following">Following</div>
+                <div id="Following"><span> Following </span></div>
 
                 <div class="search-box">
                   <input type="text" placeholder="🔍︎ Search" id="search">
@@ -41,20 +41,32 @@ if(isset($_SESSION["userid"])){ ?>
             </div>
 
             <div class="center-content">
+                <div class="post">
+                    <div class="input-post">
+                        <div class="profile-dp"><span>R</span></div>
+                        <div class="happening-input">
+                            <input type="text" id="post_input" name="input_post" value="" placeholder="Whats's happening?">
+                        </div>
+                    </div>
+                    
+                    <div class="everyone-reply">
+                        <span><i class="fa-solid fa-earth-americas"></i><a href="">Everyone can reply</a></span>
+                    </div>
+
+                    <div class="post-options">
+                        <span class="image"><img src="image/gallery.png" width="20"></span>
+                        <span class="gif"><img src="image/gif.png" width="20"></span>
+                        <span class="grok"><img src="image/grok.png" width="20"></span>
+                        <span class="poll"><img src="image/polling.png" width="20"></span>
+                        <span class="emoji"><img src="image/emoji.png" width="20"></span>
+                        <span class="schedule"><img src="image/schedule.png" width="20"></span>
+                        <span class="location"><img src="image/location.png" width="20"></span>
+                    </div>
+                </div>
+
                 <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div>
                 <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div>
                 <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div>
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div>
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div>
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div> 
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div> 
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div> 
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div> 
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div> 
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div> 
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div> 
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div> 
-                <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div> 
             </div>
         </div>
 
@@ -71,6 +83,11 @@ if(isset($_SESSION["userid"])){ ?>
         </div>
     </div>
 </body>
+<script>
+    $(document).ready(function () {
+        $("#home").addClass("sidebar-activepage");
+    });
+</script>
 </html>
 <?php }else{
     header("location:signup.php");

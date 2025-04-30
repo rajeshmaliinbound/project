@@ -17,16 +17,27 @@ if(isset($_SESSION["userid"])){ ?>
         ?>
 
         <div class="center-main">
-        <?php
+            <?php
             // include file of notification center part
             include 'layout/notification_center.php';
             ?>
 
-            <div class="center-content">
-                <div class="notifications-btn">
-                    <a href="notifications.php">All</a>
-                    <a href="verified.php" class="ntf-active" style="color: black;">Verified</a>
-                    <a href="mentions.php">Mentions</a>
+            <div class="notifications-btn">
+                <a href="notifications.php">All</a>
+                <a href="verified.php" class="ntf-active" style="color: black;">Verified</a>
+                <a href="mentions.php">Mentions</a>
+            </div>
+
+            <div class="center-content" style="padding: 140px 0px;">
+                <div class="mention-center">
+                    <p>
+                        <img src="image/varify.png" alt="">
+                    </p>
+                </div>
+                 
+                <div class="mention-center">
+                    <p>Nothing to see here — &nbspyet</p>
+                    <section>Likes, mentions, reposts, and a whole lot more &nbsp— when it comes from a verified account, you’ll &nbsp find it here. <a href="" style="color: black;font-weight: 500; text-decoration: underline;">Learn more</a></section>
                 </div>
             </div>
         </div>
@@ -37,6 +48,11 @@ if(isset($_SESSION["userid"])){ ?>
         ?>
     </div>
 </body>
+<script>
+    $(document).ready(function () {
+        $("#notification").addClass("sidebar-activepage");
+    });
+</script>
 </html>
 <?php 
 }else{
