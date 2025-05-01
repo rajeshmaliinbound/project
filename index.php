@@ -28,11 +28,11 @@ if(isset($_SESSION["userid"])){ ?>
         include 'layout/left-sidebar.php';
         ?>
 
-        <div class="center-main">
+        <div class="center-main" style="margin: 0 497px 0 280px;">
             <div class="center-header">
-                <div id="for-you"><span class="foryou-following-active"> For you </span></div>
+                <div id="for-you"><span id="for_active" class="foryou-following-active"> For you </span></div>
 
-                <div id="Following"><span> Following </span></div>
+                <div id="Following"><span id="following"> Following </span></div>
 
                 <div class="search-box">
                   <input type="text" placeholder="🔍︎ Search" id="search">
@@ -40,27 +40,29 @@ if(isset($_SESSION["userid"])){ ?>
 
             </div>
 
-            <div class="center-content">
+            <div class="center-content" style="padding-top: 56px;">
                 <div class="post">
                     <div class="input-post">
                         <div class="profile-dp"><span>R</span></div>
                         <div class="happening-input">
-                            <input type="text" id="post_input" name="input_post" value="" placeholder="Whats's happening?">
+                            <input type="text" class="post_input" name="input_post" value="" placeholder="Whats's happening?">
                         </div>
                     </div>
                     
                     <div class="everyone-reply">
-                        <span><i class="fa-solid fa-earth-americas"></i><a href="">Everyone can reply</a></span>
+                        <span><i class="fa-solid fa-earth-americas"></i><a href="#">Everyone can reply</a></span>
                     </div>
 
                     <div class="post-options">
-                        <span class="image"><img src="image/gallery.png" width="20"></span>
-                        <span class="gif"><img src="image/gif.png" width="20"></span>
-                        <span class="grok"><img src="image/grok.png" width="20"></span>
-                        <span class="poll"><img src="image/polling.png" width="20"></span>
-                        <span class="emoji"><img src="image/emoji.png" width="20"></span>
-                        <span class="schedule"><img src="image/schedule.png" width="20"></span>
-                        <span class="location"><img src="image/location.png" width="20"></span>
+                        <label for="image"><span class="image"><img src="image/gallery.png" width="20"></span></label>
+                        <input type="file" name="image" id="image">
+                        <span class="extra-input"><img src="image/gif.png" width="25"></span>
+                        <span class="extra-input"><img src="image/grok.png" width="25"></span>
+                        <span class="extra-input"><img src="image/polling.png" width="20"></span>
+                        <span class="extra-input"><img src="image/emoji.png" width="20"></span>
+                        <span class="extra-input"><img src="image/schedule.png" width="20"></span>
+                        <span class="extra-input"><img src="image/location.png" width="20"></span>
+                        <button>Post</button>
                     </div>
                 </div>
 

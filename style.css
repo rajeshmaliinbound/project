@@ -651,6 +651,28 @@
     text-decoration: none;
 }
 
+#image{
+    display: none;
+}
+
+.image{
+    cursor: pointer;
+}
+
+.post-options button{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-left: 170px;
+}
+
+.extra-input{
+    opacity: 0.5;
+}
+
 .post-options{
     padding: 10px;
     margin-left: 60px;

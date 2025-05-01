@@ -339,9 +339,26 @@ $(document).ready(function () {
         $(".logout-section").fadeToggle();
     });
 
-    $("#post_input").focus(function(){
+    $(".post_input").focus(function(){
         $(this).css({
             "outline":"none",
+        });
+    });
+
+    //ajax request for following Data
+    $("#Following").click(function(){
+        $("#for_active").removeClass("foryou-following-active");
+        $(this).addClass("foryou-following-active");
+        var Following = "following";
+        $.ajax({
+            url: "controller.php",
+            type: 'post',
+            data: {
+                "following_data": Following
+            },
+            success : function(response){
+                $(".center-content").html(response);
+            }
         });
     });
 });
