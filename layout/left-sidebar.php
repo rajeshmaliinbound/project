@@ -9,7 +9,7 @@
         <a href="" id="messages"><i class="fa-regular fa-envelope"></i> Messages</a>
         <a href="" style="padding-left: 8px;" id="grok"><img src="image/grok.png" alt="" width="30"> Grok</a>
         <a href="" id="communities"><i class="fa-solid fa-people-group"></i> Communities</a>
-        <a href="" id="profile"><i class="fa-regular fa-user"></i> Profile</a>
+        <a href="profile.php" id="profile"><i class="fa-regular fa-user"></i> Profile</a>
         <a style="padding-left: 8px; cursor:pointer;"><img src="image/more.png" alt="" width="27"> More</a>
         <button class="post-btn">Post</button>
     </div>

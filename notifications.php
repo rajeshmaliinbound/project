@@ -37,15 +37,15 @@ if(isset($_SESSION["userid"])){ ?>
                         <span>There was a login to your account @Rajeshmali7721 from a new device on Apr 25, 2025.Review it now.</span>
                     </div>
                 </div>
-
+                
                 <div class="notify-like">
                     <div class="like-notification">
-                        <div><img src="image/like.jpg" alt="" width="25" style="margin-top: 7px; margin-right: 7px;"></i></div>
-                        <div><img src="image/profile1.jpg" alt="" width="40"></div>
+                        <div><img src="image/like.jpg" alt="" width="20" style="margin-top: 7px; margin-right: 7px;"></div>
+                        <div class="like-profile-img"><img src="image/dp.jpg" alt="" width="35"></div>
+                        <!-- <div class="like-profile">K</div> -->
                     </div>
                     <p><span style="color:black;font-weight: bold; margin-left: 37px;">Ravi Mali </span>liked your reply</p>
                 </div>
-
             </div>
         </div>
         

@@ -348,7 +348,7 @@ $(document).ready(function () {
     //ajax request for following Data
     $("#Following").click(function(){
         $("#for_active").removeClass("foryou-following-active");
-        $(this).addClass("foryou-following-active");
+        $("#following").addClass("foryou-following-active");
         var Following = "following";
         $.ajax({
             url: "controller.php",
@@ -361,4 +361,22 @@ $(document).ready(function () {
             }
         });
     });
+
+    //ajax request for following Data
+    $("#for-you").click(function(){
+        $("#following").removeClass("foryou-following-active");
+        $("#for_active").addClass("foryou-following-active");
+        var for_you = "foryou";
+        $.ajax({
+            url: "controller.php",
+            type: 'post',
+            data: {
+                "foryou_data": for_you
+            },
+            success : function(response){
+                $(".center-content").html(response);
+            }
+        });
+    });
 });
+// post-delete

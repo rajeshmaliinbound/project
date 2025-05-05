@@ -109,4 +109,38 @@ if (isset($_REQUEST['following_data'])) {
         <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div>
     <?php
 }
+
+// Foryou Data
+if (isset($_REQUEST['foryou_data'])) {
+    ?>
+        <div class="post">
+            <div class="input-post">
+                <div class="profile-dp"><span>R</span></div>
+                <div class="happening-input">
+                    <input type="text" id="post_input" name="input_post" value="" placeholder="Whats's happening?">
+                </div>
+            </div>
+            
+            <div class="everyone-reply">
+                <span><i class="fa-solid fa-earth-americas"></i><a href="#">Everyone can reply</a></span>
+            </div>
+
+            <div class="post-options">
+                <label for="image"><span class="image"><img src="image/gallery.png" width="20"></span></label>
+                <input type="file" name="image" id="image">
+                <span class="extra-input"><img src="image/gif.png" width="25"></span>
+                <span class="extra-input"><img src="image/grok.png" width="25"></span>
+                <span class="extra-input"><img src="image/polling.png" width="20"></span>
+                <span class="extra-input"><img src="image/emoji.png" width="20"></span>
+                <span class="extra-input"><img src="image/schedule.png" width="20"></span>
+                <span class="extra-input"><img src="image/location.png" width="20"></span>
+                <button>Post</button>
+            </div>
+        </div>
+
+        <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div>
+        <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div>
+        <div class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos voluptate inventore quod tenetur sit quia quibusdam. Nobis, dolorem libero, aut ea non commodi similique quaerat aperiam architecto culpa dignissimos?</div>
+    <?php
+}
 ?>
