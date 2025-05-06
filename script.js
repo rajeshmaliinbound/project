@@ -378,5 +378,12 @@ $(document).ready(function () {
             }
         });
     });
+
+    $(".post-delete").click(function(){
+        $(".profile-post-popup").fadeToggle();
+    });
+
+    $(".close-post-dlt").click(function(){
+        $(".profile-post-popup").fadeOut();
+    });
 });
-// post-delete

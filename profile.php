@@ -37,137 +37,67 @@ if(isset($_SESSION["userid"])){ ?>
                      <button id="edit-profile-btn">Edit profile</button>
                      <div class="user-profile-info">
                         <h3>Rajesh Kumar</h3>
-                        <p>@RajesKuma7721</p>
+                        <p>@RajeshKuma7721</p>
                         <p><i class="fa-solid fa-calendar-days"></i> Joined April 2025</p>
                         <p><b>3</b> Following&nbsp&nbsp <b>1</b> Followers</p>
                      </div>
                 </div>
                 <div class="profile-links-btn">
-                    <a href="" id="Posts" class="profile-links-active">Posts</a>
-                    <a href="" id="Replies">Replies</a>
-                    <a href="" id="Highlights">Highlights</a>
-                    <a href="" id="Articles">Articles</a>
-                    <a href="" id="Media">Media</a>
-                    <a href="" id="Likes">Likes</a>
+                    <a id="Posts" class="profile-links-active">Posts</a>
+                    <a id="Replies">Replies</a>
+                    <a id="Highlights">Highlights</a>
+                    <a id="Articles">Articles</a>
+                    <a id="Media">Media</a>
+                    <a id="Likes">Likes</a>
                 </div>
 
                 <!-- show post data -->
-                <div class="post" style="padding: 0">
-                    <div class="post-information">
-                        <span>R</span>
-                        <p><b style="color:black;">Rajesh Kumar </b> @RajeshKuma7721 33m</p>
-                        <i class="fa-solid fa-ellipsis" class="post-delete"></i>
-                    </div>
-
-                    <div class="post-information">
-                        <div>
-                            <p class="post-discription">Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post</p>
-                        </div>
-                    </div>
-
-                    <div class="post-img">
-                        <img src="image/united-states.png" alt="No post file" width="100%" height="600px">
-                    </div>
-
-                    <div class="post-reactions">
-                        <a class="comment-post"><i class="fa-regular fa-comment"></i></a>
-                        <a class="like-post"><i class="fa-regular fa-heart"></i></a>
-                        <a><i class="fa-solid fa-repeat"></i></a>
-                        <a><i class="fa-solid fa-chart-simple"></i></a>
-                    </div>
-
-                </div>
+                <div class="post" id="showPostData" style="padding: 0"></div>
                 <!-- End show post data -->
-
-                <!-- show post data -->
-                <div class="post" style="padding: 0">
-                    <div class="post-information">
-                        <span>R</span>
-                        <p><b style="color:black;">Rajesh Kumar </b> @RajeshKuma7721 33m</p>
-                        <i class="fa-solid fa-ellipsis" class="post-delete"></i>
-                    </div>
-
-                    <div class="post-information">
-                        <div>
-                            <p class="post-discription">Rajesh mali new post new post Rajesh mali new post Rajesh mali new post</p>
-                        </div>
-                    </div>
-
-                    <div class="post-img">
-                        <img src="image/profile.jpg" alt="No post file" width="100%" height="600px">
-                    </div>
-
-                    <div class="post-reactions">
-                        <a class="comment-post"><i class="fa-regular fa-comment"></i></a>
-                        <a class="like-post"><i class="fa-regular fa-heart"></i></a>
-                        <a><i class="fa-solid fa-repeat"></i></a>
-                        <a><i class="fa-solid fa-chart-simple"></i></a>
-                    </div>
-                </div>
-                <!-- End show post data -->
-
-                <!-- show post data -->
-                <div class="post" style="padding: 0">
-                    <div class="post-information">
-                        <span>R</span>
-                        <p><b style="color:black;">Rajesh Kumar </b> @RajeshKuma7721 33m</p>
-                        <i class="fa-solid fa-ellipsis" class="post-delete"></i>
-                    </div>
-
-                    <div class="post-information">
-                        <div>
-                            <p class="post-discription">new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post</p>
-                        </div>
-                    </div>
-
-                    <div class="post-img">
-                        <img src="image/dp.jpg" alt="No post file" width="100%" height="600px">
-                    </div>
-
-                    <div class="post-reactions">
-                        <a class="comment-post"><i class="fa-regular fa-comment"></i></a>
-                        <a class="like-post"><i class="fa-regular fa-heart"></i></a>
-                        <a><i class="fa-solid fa-repeat"></i></a>
-                        <a><i class="fa-solid fa-chart-simple"></i></a>
-                    </div>
-                </div>
-                <!-- End show post data -->
-
-                <!-- show post data -->
-                <div class="post" style="padding: 0">
-                    <div class="post-information">
-                        <span>R</span>
-                        <p><b style="color:black;">Rajesh Kumar </b> @RajeshKuma7721 33m</p>
-                        <i class="fa-solid fa-ellipsis" class="post-delete"></i>
-                    </div>
-
-                    <div class="post-information">
-                        <div>
-                            <p class="post-discription">Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post Rajesh mali new post</p>
-                        </div>
-                    </div>
-
-                    <div class="post-img">
-                        <img src="image/like.jpg" alt="No post file" width="100%" height="600px">
-                    </div>
-
-                    <div class="post-reactions">
-                        <a class="comment-post"><i class="fa-regular fa-comment"></i></a>
-                        <a class="like-post"><i class="fa-regular fa-heart"></i></a>
-                        <a><i class="fa-solid fa-repeat"></i></a>
-                        <a><i class="fa-solid fa-chart-simple"></i></a>
-                    </div>
-                </div>
-                <!-- End show post data -->
-
             </div>
         </div>
 
         <div class="rightbar">
-            <div class="subscribe">
-                <h3>Subscribe to Premium</h3>
-                <p>Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
-                <button id="subscribe-btn">Subscribe</button>
+            <div class="might-like">
+                <h3>You might like</h3>
+                <!-- you might like show 3 user using limit -->
+                <div class="users-might">
+                    <!-- <div><img src="image/dp.jpg" width="50"></div> -->
+                    <div class="profile-avatar"><span>R</span></div>
+                    <div style="margin-left: 10px;">
+                        <div style="color:black; font-size: 18px;"><strong>Ravi Mali</strong></div>
+                        <div style="color: rgb(95, 94, 94);; font-size: 15px;">@Ravikumar8979</div>
+                    </div>
+                    <div class="might-follow-users">
+                        <a href="">Follow</a>
+                    </div>
+                </div>
+
+                <!-- you might like show 3 user using limit -->
+                <div class="users-might">
+                    <!-- <div><img src="image/dp.jpg" width="50"></div> -->
+                    <div class="profile-avatar"><span>R</span></div>
+                    <div style="margin-left: 10px;">
+                        <div style="color:black; font-size: 18px;"><strong>Ravi Mali</strong></div>
+                        <div style="color: rgb(95, 94, 94);; font-size: 15px;">@Ravikumar8979</div>
+                    </div>
+                    <div class="might-follow-users">
+                        <a href="">Follow</a>
+                    </div>
+                </div>
+
+                <!-- you might like show 3 user using limit -->
+                <div class="users-might">
+                    <!-- <div><img src="image/dp.jpg" width="50"></div> -->
+                    <div class="profile-avatar"><span>R</span></div>
+                    <div style="margin-left: 10px;">
+                        <div style="color:black; font-size: 18px;"><strong>Ravi Mali</strong></div>
+                        <div style="color: rgb(95, 94, 94);; font-size: 15px;">@Ravikumar8979</div>
+                    </div>
+                    <div class="might-follow-users">
+                        <a href="">Follow</a>
+                    </div>
+                </div>                
             </div>
 
             <?php
@@ -180,6 +110,63 @@ if(isset($_SESSION["userid"])){ ?>
 <script>
     $(document).ready(function () {
         $("#profile").addClass("sidebar-activepage");
+
+        // start profile page fetch Data using ajax
+        var profilepageVal = "Posts"
+        profilepageData(profilepageVal);
+
+        function profilepageData(getId) {
+            $("#Posts").removeClass("profile-links-active");
+            $("#Replies").removeClass("profile-links-active");
+            $("#Highlights").removeClass("profile-links-active");
+            $("#Articles").removeClass("profile-links-active");
+            $("#Media").removeClass("profile-links-active");
+            $("#Likes").removeClass("profile-links-active");
+            if(!getId== ''){
+                $("#"+getId).addClass("profile-links-active");
+
+                $.ajax({
+                    url: "controller.php",
+                    type: 'post',
+                    data: {
+                        "Profilepage": getId
+                    },
+                    success : function(response){
+                        $("#showPostData").html(response);
+                    }
+                });
+            }
+        }
+
+        $("#Posts").click(function(){
+            var PostsID = $(this).attr("id");
+            profilepageData(PostsID);
+        });
+
+        $("#Replies").click(function(){
+            var RepliesID = $(this).attr("id");
+            profilepageData(RepliesID);
+        });
+
+        $("#Highlights").click(function(){
+            var HighlightsID = $(this).attr("id");
+            profilepageData(HighlightsID);
+        });
+
+        $("#Articles").click(function(){
+            var ArticlesID = $(this).attr("id");
+            profilepageData(ArticlesID);
+        });
+
+        $("#Media").click(function(){
+            var MediaID = $(this).attr("id");
+            profilepageData(MediaID);
+        });
+
+        $("#Likes").click(function(){
+            var LikesID = $(this).attr("id");
+            profilepageData(LikesID);
+        });
     });
 </script>
 </html>
