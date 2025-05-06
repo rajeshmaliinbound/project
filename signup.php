@@ -136,7 +136,7 @@
             </form>
 
             <div style="width: 100%;" class="signup-bt">
-                <p>Don't have an account? <a href="#">Sign up</a></p>
+                <p>Don't have an account? <a id="signup-click">Sign up</a></p>
             </div>
         </div>
     </div>

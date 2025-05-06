@@ -189,6 +189,10 @@
     border: 1px solid rgb(204, 201, 201);
 }
 
+#signup-click{
+    cursor: pointer;
+}
+
 .sign-in-account:hover {
     background-color: #eef6fc;
     text-decoration: none;

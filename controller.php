@@ -93,7 +93,7 @@ if (isset($_REQUEST['following_data'])) {
 
             <div class="post-options">
                 <label for="image"><span class="image"><img src="image/gallery.png" width="20"></span></label>
-                <input type="file" name="image" id="image">
+                <input type="file" name="image" accept="image/*" id="image">
                 <span class="extra-input"><img src="image/gif.png" width="25"></span>
                 <span class="extra-input"><img src="image/grok.png" width="25"></span>
                 <span class="extra-input"><img src="image/polling.png" width="20"></span>
@@ -127,7 +127,7 @@ if (isset($_REQUEST['foryou_data'])) {
 
             <div class="post-options">
                 <label for="image"><span class="image"><img src="image/gallery.png" width="20"></span></label>
-                <input type="file" name="image" id="image">
+                <input type="file" name="image" accept="image/*" id="image">
                 <span class="extra-input"><img src="image/gif.png" width="25"></span>
                 <span class="extra-input"><img src="image/grok.png" width="25"></span>
                 <span class="extra-input"><img src="image/polling.png" width="20"></span>

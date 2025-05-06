@@ -40,6 +40,15 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+    //signin page to signup page
+    $("#signup-click").click(function(){
+        $('.signin-form').fadeOut();
+        $('body').css('overflow', 'auto');
+        $('.signup-form').fadeIn();
+        $('.overlay').fadeIn();
+        $('body').css('overflow', 'hidden');
+    });
+
     // sign up form validation
     // on blur
     $("input").blur(function () {
