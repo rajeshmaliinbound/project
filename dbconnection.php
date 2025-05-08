@@ -2,7 +2,7 @@
 $server = 'localhost';
 $username = 'root';
 $password = '';
-$dbName = 'projectx';
+$dbName = 'twitter';
 
 $conn = new mysqli($server,$username,$password,$dbName);
 

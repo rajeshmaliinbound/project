@@ -388,11 +388,21 @@ $(document).ready(function () {
         });
     });
 
-    $(".post-delete").click(function(){
+    // delete post event
+    $(document).on("click", ".post-delete", function() {
         $(".profile-post-popup").fadeToggle();
     });
 
-    $(".close-post-dlt").click(function(){
+    $(document).on("click", ".close-post-dlt", function() {
         $(".profile-post-popup").fadeOut();
+    });
+
+    // edit profile form open close
+    $("#edit-profile-btn").click(function(){
+        $("#edit-profile-modal").fadeIn();
+    });
+
+    $(".close-edit-form").click(function(){
+        $("#edit-profile-modal").fadeOut();
     });
 });

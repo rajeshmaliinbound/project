@@ -4,6 +4,9 @@ if(isset($_SESSION["userid"])){ ?>
 <html lang="en">
 <head>
     <?php
+    // fetch login userData
+     include 'login_user_data.php';
+
     // include file of head section items 
     include 'layout/header.php';
     ?>
@@ -18,9 +21,9 @@ if(isset($_SESSION["userid"])){ ?>
 
         <div class="center-main" style="margin: 0 497px 0 280px;">
             <div class="profile-center-header">
-                <div class="profile-head"><span id="">Rajesh Kumar <br> <span class="profile-post-all-count">0 posts</span></span></div>
+                <div class="profile-head"><span id=""><?php echo $userDAta['name']?> <br> <span class="profile-post-all-count">0 posts</span></span></div>
 
-                <div class="search-box">
+                <div class="search-box" style="margin-left: 670px;">
                   <input type="text" placeholder="🔍︎ Search" id="search">
                 </div>
             </div>
@@ -33,12 +36,12 @@ if(isset($_SESSION["userid"])){ ?>
                 </div>
                 <div class="post" id="profile-dp-show">
                     <!-- <img src="image/dp.jpg" id="profile-dp-show" alt=""> -->
-                    <span>R</span>
+                    <span><?php echo $_SESSION['firstchr']?></span>
                      <button id="edit-profile-btn">Edit profile</button>
                      <div class="user-profile-info">
-                        <h3>Rajesh Kumar</h3>
-                        <p>@RajeshKuma7721</p>
-                        <p><i class="fa-solid fa-calendar-days"></i> Joined April 2025</p>
+                        <h3><?php echo $userDAta['name']?></h3>
+                        <p>@<?php echo $userDAta['username'];?></p>
+                        <p><i class="fa-solid fa-calendar-days"></i> <?php echo $userDAta['join_date']?></p>
                         <p><b>3</b> Following&nbsp&nbsp <b>1</b> Followers</p>
                      </div>
                 </div>
@@ -71,39 +74,70 @@ if(isset($_SESSION["userid"])){ ?>
                     <div class="might-follow-users">
                         <a href="">Follow</a>
                     </div>
-                </div>
-
-                <!-- you might like show 3 user using limit -->
-                <div class="users-might">
-                    <!-- <div><img src="image/dp.jpg" width="50"></div> -->
-                    <div class="profile-avatar"><span>R</span></div>
-                    <div style="margin-left: 10px;">
-                        <div style="color:black; font-size: 18px;"><strong>Ravi Mali</strong></div>
-                        <div style="color: rgb(95, 94, 94);; font-size: 15px;">@Ravikumar8979</div>
-                    </div>
-                    <div class="might-follow-users">
-                        <a href="">Follow</a>
-                    </div>
-                </div>
-
-                <!-- you might like show 3 user using limit -->
-                <div class="users-might">
-                    <!-- <div><img src="image/dp.jpg" width="50"></div> -->
-                    <div class="profile-avatar"><span>R</span></div>
-                    <div style="margin-left: 10px;">
-                        <div style="color:black; font-size: 18px;"><strong>Ravi Mali</strong></div>
-                        <div style="color: rgb(95, 94, 94);; font-size: 15px;">@Ravikumar8979</div>
-                    </div>
-                    <div class="might-follow-users">
-                        <a href="">Follow</a>
-                    </div>
-                </div>                
+                </div>            
             </div>
 
             <?php
                 // include file of right-footer 
                 include 'layout/footer.php';
             ?>
+        </div>
+    </div>
+
+
+    <div id="edit-profile-modal" class="edit-modal-overlay">
+        <div class="edit-profile-modal-content">
+            <div class="edit-header">
+                <h2>Edit profile</h2>
+                <button class="close-edit-form">Close</button>
+            </div>
+
+            <!-- <div class="banner" onclick="document.getElementById('banner-upload').click();">
+                <span class="icon">+</span>
+                <input type="file" id="banner-upload">
+            </div> -->
+            
+            <div class="banner" onclick="document.getElementById('banner-upload').click();">
+                <img src="image/bg_cover.jpg" class="icon" alt="" width="100%">
+                <i class="icon" style="color: black;">+</i>
+                <input type="file" id="banner-upload">
+            </div>
+
+            <!-- <div class="profile-pic" onclick="document.getElementById('profile-upload').click();">
+                <span class="icon">R</span>
+                <i class="icon" style="color: black;">+</i>
+                <input type="file" id="profile-upload">
+            </div> -->
+
+            <div class="profile-pic" onclick="document.getElementById('profile-upload').click();">
+                <img src="image/dp.jpg" class="icon" alt="" width="80">
+                <i class="icon" style="color: black;">+</i>
+                <input type="file" id="profile-upload">
+            </div>
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" value="">
+            </div>
+
+            <div class="form-group">
+                <label>Bio</label>
+                <textarea id="bio" maxlength="160" rows="3" oninput="updateCharCount()"></textarea>
+                <div class="char-count" id="charCount">0 / 160</div>
+            </div>
+            <div style="text-align: center;">
+               <button class="edit-save-btn">Save</button>
+            </div>
+
+            <!-- <div class="form-group">
+                <label>Location</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Website</label>
+                <input type="text">
+            </div> -->
         </div>
     </div>
 </body>
